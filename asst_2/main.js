@@ -5,7 +5,7 @@ const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
 /* Looping through images */
-/*Copy from https://mdn.github.io/learning-area/javascript/building-blocks/gallery/ */
+/*Referenced from https://mdn.github.io/learning-area/javascript/building-blocks/gallery/ */
 for(let i = 1; i <= 5; i++) {
     const newImage = document.createElement('img');
     newImage.setAttribute('src', 'images/pic' + i + '.jpg');
@@ -16,7 +16,7 @@ for(let i = 1; i <= 5; i++) {
   }
 
 /* Wiring up the Darken/Lighten button */
-/*Copy from https://mdn.github.io/learning-area/javascript/building-blocks/gallery/ */
+/*Referenced from https://mdn.github.io/learning-area/javascript/building-blocks/gallery/ */
 
 btn.onclick = function() {
     const btnClass = btn.getAttribute('class');
@@ -26,6 +26,7 @@ btn.onclick = function() {
       overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
     } else {
       btn.setAttribute('class','dark');
+      btn
       btn.textContent = 'Darken';
       overlay.style.backgroundColor = 'rgba(0,0,0,0)';
     }
