@@ -11,7 +11,7 @@ for(let i = 1; i <= 5; i++) {
     newImage.setAttribute('src', 'images/pic' + i + '.jpg');
     thumbBar.appendChild(newImage);
     newImage.onclick = function(e) {
-      displayedImage.src = e.target.src;
+      displayedImage.src = e.target.src
     }
   }
 
